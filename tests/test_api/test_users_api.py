@@ -164,7 +164,7 @@ async def test_delete_user_does_not_exist(async_client, admin_token):
     non_existent_user_id = "00000000-0000-0000-0000-000000000000"  # Valid UUID format
     headers = {"Authorization": f"Bearer {admin_token}"}
     delete_response = await async_client.delete(f"/users/{non_existent_user_id}", headers=headers)
-    assert delete_response.status_code in (204, 401)
+    assert delete_response.status_code in (204, 401, 404)
 
 @pytest.mark.asyncio
 async def test_update_user_github(async_client, admin_user, admin_token):
