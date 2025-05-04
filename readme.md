@@ -41,7 +41,7 @@ This repository contains improvements to a user management system, focusing on:
 
 ## 🧪 Test Suite
 
-Our comprehensive PyTest suite covers all critical features with [asyncio support](https://github.com/Venkatasaikumarkethala/user_management_homework/tree/main/tests/test_api/test_users_api.py).
+Our comprehensive PyTest suite covers all critical features with asyncio support [View code](https://github.com/Venkatasaikumarkethala/user_management_homework/tree/main/tests/test_api/test_users_api.py).
 
 ### Authentication Tests
 - Account locking after failed attempts
