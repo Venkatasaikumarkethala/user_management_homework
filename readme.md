@@ -24,12 +24,12 @@ This repository contains improvements to a user management system, focusing on:
 - Added indexes on frequently queried fields like email and nickname
 - Improved database performance for growing user bases
 - [View code](https://github.com/Venkatasaikumarkethala/user_management_homework/tree/main/app/models/user_model.py)
-- [View code](https://github.com/Venkatasaikumarkethala/user_management_homework/issues/3)
+- [View issue](https://github.com/Venkatasaikumarkethala/user_management_homework/issues/3)
 
 **🔒 Issue #4: Insufficient Input Validation**
 - Enhanced validation for email formats and password complexity requirements
 - [View code](https://github.com/Venkatasaikumarkethala/user_management_homework/tree/main/app/schemas/user_schemas.py)
-- [View code](https://github.com/Venkatasaikumarkethala/user_management_homework/issues/4)
+- [View issue](https://github.com/Venkatasaikumarkethala/user_management_homework/issues/4)
 
 **🔒 Issue #5: Improper JWT Token Validation**
 - Fixed token expiration and signature verification to prevent security vulnerabilities
