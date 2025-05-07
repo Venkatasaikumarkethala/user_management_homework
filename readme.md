@@ -16,6 +16,7 @@ This repository contains improvements to a user management system, focusing on:
 **🔒 Issue #1: No Input Sanitization**
 - Implemented proper sanitization to prevent SQL injection attacks
 - [View code](https://github.com/Venkatasaikumarkethala/user_management_homework/tree/main/app/schemas/user_schemas.py)
+- [View issue](https://github.com/Venkatasaikumarkethala/user_management_homework/issues/1)
 
 ### Performance Optimizations
 
@@ -23,14 +24,17 @@ This repository contains improvements to a user management system, focusing on:
 - Added indexes on frequently queried fields like email and nickname
 - Improved database performance for growing user bases
 - [View code](https://github.com/Venkatasaikumarkethala/user_management_homework/tree/main/app/models/user_model.py)
+- [View code](https://github.com/Venkatasaikumarkethala/user_management_homework/issues/3)
 
 **🔒 Issue #4: Insufficient Input Validation**
 - Enhanced validation for email formats and password complexity requirements
 - [View code](https://github.com/Venkatasaikumarkethala/user_management_homework/tree/main/app/schemas/user_schemas.py)
+- [View code](https://github.com/Venkatasaikumarkethala/user_management_homework/issues/4)
 
 **🔒 Issue #5: Improper JWT Token Validation**
 - Fixed token expiration and signature verification to prevent security vulnerabilities
 - [View code](https://github.com/Venkatasaikumarkethala/user_management_homework/tree/main/app/services/jwt_service.py)
+- [View issue](https://github.com/Venkatasaikumarkethala/user_management_homework/issues/5)
 
 
 ### Reliability Improvements
@@ -38,6 +42,7 @@ This repository contains improvements to a user management system, focusing on:
 **📧 Issue #3: Improper Error Handling in Email Service**
 - Added robust exception handling for email operations
 - [View code](https://github.com/Venkatasaikumarkethala/user_management_homework/tree/main/app/services/email_service.py)
+- [View issue](https://github.com/Venkatasaikumarkethala/user_management_homework/issues/3)
 
 ## 🧪 Test Suite
 
