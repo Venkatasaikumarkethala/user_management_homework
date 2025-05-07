@@ -62,10 +62,15 @@ Our comprehensive PyTest suite covers all critical features with asyncio support
 ## ✨ New Features
 
 ### Advanced User Search
-Enhanced search and filtering capabilities for administrators to efficiently manage users.
+Advanced User Search
+I have implemented an endpoint at GET /users/search that allows administrators to perform powerful, criteria-based lookups across the user base. Using the UserSearchParams schema, clients can filter by name, email, role, verification or lock status, professional status, and creation date ranges, then sort by any field in ascending or descending order. Under the hood, the service builds dynamic SQLAlchemy queries—leveraging indexed columns for performance—and returns paginated results alongside HATEOAS links (self, first, prev, next, last) so clients can easily navigate through pages. I wrote five new tests (tests/test_search_users.py) covering edge cases such as empty results, mixed‐criteria searches, and invalid parameters, and documented the feature in features.md and system_documentation.md.
 
 ### Profile Management
-Improved user profile management with support for profile updates and professional status upgrades.
+To empower users and administrators with richer account control, I added two new endpoints:
+	•	PUT /me/profile lets authenticated users update their profile attributes (first/last name, bio, nickname, and social links). It filters out any unauthorized fields and returns a fully HATEOAS-linked UserResponse.
+	•	PUT /users/{user_id}/professional-status enables admins and managers to toggle a user’s is_professional flag. This endpoint checks role permissions, updates the database, and returns the updated user with navigational links.
+
+I extended the test suite with five tests in tests/test_profile_management.py to verify field restrictions, self-update flows, and professional-status transitions, and updated the README and finalproject.md to reflect usage examples and configuration notes.
 
 ## 🐳 Deployment
 
